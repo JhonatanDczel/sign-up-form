@@ -104,18 +104,18 @@ form {
 input:valid:not(.confirm),
 input[data-status="valid"]:not(:placeholder-shown) {
   border: 2px solid #65d35fdd;
-  outline: none;
+  outline-color: transparent;
 }
 
 input:invalid:not(:placeholder-shown):not(.confirm),
 input[data-status="invalid"]:not(:placeholder-shown) {
   border: 2px solid rgba(255, 0, 0, 0.7);
-  outline: none;
+  outline-color: transparent;
 }
 
 input:focus {
   border: 2px solid #7873dddd !important;
-  outline: none;
+  outline-color: transparent;
 }
 
 .campos {
