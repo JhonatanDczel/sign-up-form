@@ -33,7 +33,7 @@
             </div>
             <div class="campo">
               <label for="user-email">EMAIL</label>
-              <input type="email" name="user_email" placeholder='hola@ejemplo.com' id='user-email' required>
+              <input type="email" name="user_email" placeholder='hola@ejemplo.com' id='user-email' autocomplete="email" required>
             </div>
             <div class="campo">
               <label for="user-phone">PHONE NUMBER</label>
@@ -41,11 +41,11 @@
             </div>
             <div class="campo">
               <label for="user-password">PASSWORD</label>
-              <input type="password" name="user_password" id='user-password' placeholder='*********'required>
+              <input type="password" name="user_password" id='user-password' placeholder='*********' autocomplete='new-password' required>
             </div>
             <div class="campo">
               <label for="user-password-2">CONFIRM PASSWORD</label>
-              <input type="password" id='user-password-2' placeholder='*********' class='confirm' data-status="invalid" required>
+              <input type="password" id='user-password-2' placeholder='*********' class='confirm' data-status="invalid" autocomplete='new-password'>
             </div>
           </div>
           <button type="none">Create Account</button>
