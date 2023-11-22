@@ -9,6 +9,7 @@ body {
   background: linear-gradient(to right, #7b89f0, #7871db);
   display: flex;
   justify-content: center;
+  gap: 19px;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
@@ -87,6 +88,7 @@ form {
 
 .campo > label {
   font-weight: 700;
+  color: #000a;
 }
 
 .campo > input {
@@ -98,12 +100,14 @@ form {
 }
 
 
-input:valid {
+input:valid:not(.confirm),
+input[status="valid"]:not(:placeholder-shown) {
   border: 2px solid #65d35fdd;
   outline: none;
 }
 
-input:invalid:not(:placeholder-shown) {
+input:invalid:not(:placeholder-shown):not(.confirm),
+input[status="invalid"]:not(:placeholder-shown) {
   border: 2px solid rgba(255, 0, 0, 0.7);
   outline: none;
 }
@@ -139,11 +143,28 @@ button:hover{
 }
 
 .call-action > .login {
-  color: #333;
+  color: #000a;
 }
 
 .login > a {
   color: #009cb2;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer > a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.icon {
+  font-weight: 900;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 800px){
