@@ -20,7 +20,7 @@ main {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(0 0 0 / .3);
-  width: min(80vw, 1200px);
+  width: min(80vw, 1000px);
   min-height: 90vh;
   display: flex;
   justify-content: space-between;
@@ -40,13 +40,35 @@ img {
   width: 100%;
 }
 
+.disclaimer-content {
+  padding: 0 20px;
+}
+
+em {
+  font-weight: 700;
+}
+
+h1 {
+  color: #7871db;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.disclaimer-message.first {
+  color: #444;
+}
+
+.disclaimer-message.second {
+  color: #777;
+}
+
 .signup-content {
   width: 60%;
   align-items: center;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 
@@ -54,6 +76,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  justify-content: center;
 }
 
 .campo {
@@ -97,6 +120,30 @@ input:focus {
   padding: 8px;
   justify-content: space-evenly;
   align-items: center;
+}
+
+button {
+  background-color: #7871db;
+  border: 2px solid #7871db;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+button:hover{
+  color: #7871db;
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #7871db;
+}
+
+.call-action > .login {
+  color: #333;
+}
+
+.login > a {
+  color: #009cb2;
 }
 
 @media screen and (max-width: 800px){
