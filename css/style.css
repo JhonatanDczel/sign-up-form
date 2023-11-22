@@ -76,17 +76,17 @@ form {
 
 
 input:valid {
-  border: 2px solid #65d35fcc;
+  border: 2px solid #65d35fdd;
   outline: none;
 }
 
 input:invalid:not(:placeholder-shown) {
-  border: 2px solid rgba(255, 0, 0, 0.6);
+  border: 2px solid rgba(255, 0, 0, 0.7);
   outline: none;
 }
 
 input:focus {
-  border: 2px solid #7873ddcc !important;
+  border: 2px solid #7873dddd !important;
   outline: none;
 }
 
